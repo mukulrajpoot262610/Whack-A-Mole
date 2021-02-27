@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background: none;
+}
+
+
+html{
+    font-size: 62.5%;
+    cursor: url("/img/3D-asset-thor-s-hammer_600.png"), pointer;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #194036;
+    color: #679387;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1{
+    font-size: 14rem;
+}
+
+.container h2{
+    font-size: 3rem;
+}
+
+.play-btn{
+    background: none;
+    border: none;
+    margin-top: 16rem;
+    outline: .1rem solid #679387;
+    padding: 2rem 6rem;
+    font-size: 4rem;
+    color: #679387;
+    transition: outline-offset 0.5s ease;
+}
+
+.start-btn{
+    background: none;
+    border: none;
+    outline: .1rem solid #679387;
+    padding: 2rem 6rem;
+    font-size: 4rem;
+    color: #679387;
+    transition: outline-offset 0.5s ease;
+}
+
+.again-btn{
+    background: none;
+    border: none;
+    outline: .1rem solid #679387;
+    padding: 2rem 6rem;
+    font-size: 4rem;
+    color: #679387;
+    transition: outline-offset 0.5s ease;
+}
+
+
+.play-btn:hover{
+    outline-offset: 1rem;
+    cursor: url("/img/3D-asset-thor-s-hammer_600.png"), pointer;
+}
+
+/* --------------------------------------- game ---------------------------- */
+
+.game{
+    height: 100vh;
+    width: 100%;
+    background: #194036;
+    display: none;
+}
+
+.score{
+    color: #679387;
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score h1{
+    font-size: 30rem;
+}
+
+.score h2{
+    font-size: 15rem;
+}
+
+.game-area{
+    /* background: tomato; */
+    flex: 0 0 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------- hole -------------------------------- */
+
+.hole {
+    position: relative;
+    z-index: 10;
+}
+
+.hole img{
+    width: 38rem;
+}
+
+.mole{
+    position: absolute;
+    top: -10%;
+    left: 35%;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+
+.mole img{
+    width: 10rem;
+    pointer-events: none;
+}
+  
+  /* .hole:after {
+    display: block;
+    background: url('/img/dirt.svg') bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+  } */
+   
+
+/* ------------------------------- peep ----------------------------------- */
+
+.up{
+    transform: scale(1) translateY(-50%);
+}
+
+
+
+/* --------------------------------- responsive ------------------------- */
+
+@media (max-width:1000px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 20%;
+    }
+}
+
+
+
+.none{
+    display: none;
+}
