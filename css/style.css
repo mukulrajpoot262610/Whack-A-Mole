@@ -126,7 +126,7 @@ html{
 }
 
 .mole img{
-    width: 10rem;
+    width: 18rem;
     pointer-events: none;
 }
   
@@ -157,16 +157,19 @@ html{
     html{
         font-size: 40%;
     }
+    .mole img{
+        width: 20rem;
+        pointer-events: none;
+    }
 }
 
 @media (max-width: 768px){
     html{
         font-size: 20%;
     }
+    .mole img{
+        width: 20rem;
+        pointer-events: none;
+    }
 }
 
-
-
-.none{
-    display: none;
-}
